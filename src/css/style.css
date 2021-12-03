@@ -41,19 +41,22 @@ a {
 /*/header/*/
 .photo {
     position: absolute;
-    transform: translate(100%, -20%);
+    transform: translate(91%, -20%);
     z-index: -5;
 
 }
 
 
 .header-link {
-    text-transform: uppercase;
+    margin-right: 36px;
     color: black;
-    margin-right: 20px;
-    font-weight: 500;
-    font-size: 17px;
-    padding: 0 10px 0 5px;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .header-div {
@@ -79,7 +82,7 @@ a {
     color: black;
     height: 30px;
     cursor: pointer;
-    outline: none;
+    list-style: none;
     font-weight: 400;
     font-size: 14px;
 
@@ -92,12 +95,14 @@ a {
     padding: 7px;
     background: transparent;
     transition: 0.5s;
+    list-style: none;
+    border: 1px solid black;
 }
 
 .header-button:hover {
     transition: 0.5s;
-    background-color: black;
-    color: white;
+    background-color: gray;
+    color: #181E4B;
 }
 
 .header-menu {
@@ -155,7 +160,7 @@ a {
 .travel-button:hover {
     transition: 0.5s;
     background-color: white;
-    color: black;
+    color: #15194b;
 }
 
 .travel-play {
@@ -291,6 +296,7 @@ a {
     font-size: 60px;
     font-weight: 700;
     text-align: center;
+
 }
 
 .destination-item {
@@ -303,15 +309,19 @@ a {
 
 }
 
+.destination-under{
+    padding-top: 20px;
+}
+
 .destination-under {
     position: absolute;
-    width: 315px;
+    width: 215px;
     height: 130px;
     display: flex;
     background-color: white;
     border-radius: 0 0 20px 20px;
     justify-content: space-between;
-    margin: 400px 0 0 80px;
+    margin: 310px 0 0 60px;
     font-size: 18px;
     font-weight: 500;
     color: #5E6282;
@@ -320,6 +330,10 @@ a {
 
 .destination-wrap{
     display: flex;
+    justify-content: space-between;
+}
+.destination-images{
+    margin-bottom: 20px;
 }
 
 /*/destination/*/
@@ -591,3 +605,39 @@ a {
     display: flex;
 }
 /*/helper/*/
+/*burger-menu*/
+.mobile-btn {
+    width: 55px;
+    height: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-btn-span {
+    width: 100%;
+    height: 3px;
+    background: #000000;
+    display: inline-block;
+    position: relative;
+}
+
+.mobile-btn-span::before, .mobile-btn-span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    transition: .6s;
+
+}
+
+.mobile-btn-span::before {
+    top: -10px;
+}
+
+.mobile-btn-span::after {
+    top: 10px;
+}
+
+/*burger-menu*/
